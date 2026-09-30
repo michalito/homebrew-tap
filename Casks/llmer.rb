@@ -1,6 +1,6 @@
 cask "llmer" do
-  version "0.1.3"
-  sha256 "8bbdc594cb33799488ac41e8ac166d03b662705d649a58f6f90caaf6ef9b0e7a"
+  version "0.1.4"
+  sha256 "5f6a405c431feee084fd3d1516a26041b40eeae135155e73f31d680ca6dda78d"
 
   url "https://github.com/michalito/homebrew-tap/releases/download/v#{version}/llmer-#{version}.zip"
   name "llmer"
@@ -26,9 +26,4 @@ cask "llmer" do
   end
 
   zap trash: "~/Library/Application Support/llmer"
-
-  caveats <<~EOS
-    Sign-in tokens live in the Keychain and survive uninstalling; run
-    `llmer logout ACCOUNT` for each account first if you want them gone.
-  EOS
 end
