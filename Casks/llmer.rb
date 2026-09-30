@@ -14,16 +14,15 @@ cask "llmer" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "llmer.app"
   binary "llmer"
 
   # The build is signed with a self-signed certificate, not notarised by Apple, so
   # Gatekeeper would refuse the quarantined download. Clear the flag Homebrew set.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/llmer.app", "#{staged_path}/llmer"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/llmer.app", "{{staged_path}}/llmer"]
   end
 
   uninstall quit: "dev.llmer.app"
