@@ -1,8 +1,6 @@
-# Template for the cask in michalito/homebrew-tap. scripts/release.sh fills in the
-# version and checksum and pushes the result to the tap.
 cask "llmer" do
-  version "0.1.0"
-  sha256 "26916ea1a2e656b82877851ced7421e829a80961549f57bacb2c97d8451ab302"
+  version "0.1.1"
+  sha256 "4ca8377a17bc8c3c971d1134e3550465e1ce9422e78efb03c10559a88fce55c5"
 
   url "https://github.com/michalito/homebrew-tap/releases/download/v#{version}/llmer-#{version}.zip"
   name "llmer"
@@ -24,8 +22,6 @@ cask "llmer" do
   postflight_steps do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/llmer.app", "{{staged_path}}/llmer"]
   end
-
-  uninstall quit: "dev.llmer.app"
 
   zap trash: "~/Library/Application Support/llmer"
 
