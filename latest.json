@@ -1,7 +1,7 @@
 {
   "linux": {
-    "version": "0.2.0",
-    "url": "https://github.com/michalito/homebrew-tap/releases/download/v0.2.0/llmer-0.2.0-x86_64-linux.tar.gz",
-    "sha256": "56a102c322ea066f080f801379b3380c615dc65b0ddc697381187966cc67983e"
+    "version": "0.2.1",
+    "url": "https://github.com/michalito/homebrew-tap/releases/download/v0.2.1/llmer-0.2.1-x86_64-linux.tar.gz",
+    "sha256": "6d03b7d6cef14a87d1f572599f323bd7f20bbe2dc38a457f6e3af0b8d9de37e7"
   }
 }
