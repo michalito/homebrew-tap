@@ -1,6 +1,6 @@
 cask "llmer" do
-  version "0.2.2"
-  sha256 "004b82100540e1356e7e72a07f76e46ba33281f32209c430ae35b7388fc93cb6"
+  version "0.3.0"
+  sha256 "b3d07e9c9dbd49b358a9804ae9c5353703e4502b43116b357e2a5108e9a894e9"
 
   url "https://github.com/michalito/homebrew-tap/releases/download/v#{version}/llmer-#{version}.zip"
   name "llmer"
