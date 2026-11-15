@@ -1,10 +1,10 @@
 cask "llmer" do
-  version "0.3.0"
-  sha256 "b3d07e9c9dbd49b358a9804ae9c5353703e4502b43116b357e2a5108e9a894e9"
+  version "0.3.1"
+  sha256 "ef91b3337fd93141b8c3c071427e68eaea0fbf1c968223fe8541f9212a4d461a"
 
   url "https://github.com/michalito/homebrew-tap/releases/download/v#{version}/llmer-#{version}.zip"
   name "llmer"
-  desc "Menu bar app showing the usage left on Claude and Codex subscriptions"
+  desc "Menu bar app showing the usage left on Claude, Codex and Meta subscriptions"
   homepage "https://github.com/michalito/homebrew-tap"
 
   livecheck do
